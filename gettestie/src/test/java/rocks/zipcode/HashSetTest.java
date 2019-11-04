@@ -59,7 +59,7 @@ public class HashSetTest {
 
         Assert.assertEquals(expectedInt, actualInt);
         Assert.assertEquals(expectedBool, actualBool);
-    }
+        }
 
 
 

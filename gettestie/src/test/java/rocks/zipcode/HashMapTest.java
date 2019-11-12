@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class HashMapTest {
 
@@ -48,6 +49,33 @@ public class HashMapTest {
         Assert.assertEquals(expected, actual);
         Assert.assertEquals(expectedInt, actualInt);
     }
+
+
+    @Test
+    public void hashMapTest3() {
+        Person person = new Person("Frank", 1985);
+        Person person1 = new Person("Barney", 1900);
+        Person person2 = new Person("Fred", 1901);
+        Person person3 = new Person("Mac", 2005);
+
+        HashMap<String, Person> personHashMap = new HashMap();
+        personHashMap.put("Mac", person3);
+        personHashMap.put("Frank", person);
+        personHashMap.put("Fred", person2);
+        personHashMap.put("Barney", person1);
+
+
+        boolean expected = false;
+        boolean actual = personHashMap.isEmpty();
+
+
+
+
+
+        Assert.assertEquals(expected, actual);
+
+    }
+
 
 
 

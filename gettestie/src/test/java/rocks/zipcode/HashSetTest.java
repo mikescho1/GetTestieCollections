@@ -43,7 +43,7 @@ public class HashSetTest {
         Person person2 = new Person("Fred", 1901);
         Person person3 = new Person("Mac", 2005);
 
-        HashSet<Person> hashSet = new HashSet<Person>();
+        HashSet<Person> hashSet = new HashSet<>();
         hashSet.add(person);
         hashSet.add(person1);
         hashSet.add(person2);
